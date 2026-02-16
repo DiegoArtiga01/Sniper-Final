@@ -13,10 +13,5 @@ jobs:
           node-version: '18'
       - name: Install Dependencies
         run: npm install
-      - name: Build APK
-        run: npm run build # O el comando que uses para generar el APK
-      - name: Upload APK
-        uses: actions/upload-artifact@v3
-        with:
-          name: Sniper-Bot-Diego
-          path: build/outputs/apk/debug/*.apk # Verifica esta ruta según tu proyecto
+      - name: Build Android
+        run: npx cap add android && npx cap sync android && npx cap build android
