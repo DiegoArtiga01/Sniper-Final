@@ -1,0 +1,11 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "hero-trading",
+      "description": "Professional trading terminal with glowing charts",
+      "imageUrl": "https://picsum.photos/seed/trading1/1200/600",
+      "imageHint": "trading charts"
+    }
+  ]
+}
